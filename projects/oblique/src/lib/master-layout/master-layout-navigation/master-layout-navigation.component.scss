@@ -42,7 +42,6 @@
 		&:not(.ob-sub-nav) {
 			@include layout.ob-media-breakpoint-up(md) {
 				flex-direction: row;
-				padding-left: variables.$ob-spacing-default;
 			}
 		}
 
@@ -65,7 +64,6 @@
 			@include nav.ob-nav-hover(-1);
 
 			@include layout.ob-media-breakpoint-up(md) {
-				border: 0 none;
 				padding: variables.$ob-spacing-sm variables.$ob-spacing-default;
 
 				&.active,
@@ -85,10 +83,12 @@
 			@include layout.ob-media-breakpoint-up(md) {
 				> a,
 				> button {
+					border-right: 1px solid variables.$ob-gray-light;
+					border-bottom: 0 none;
 					display: inline-flex;
 					padding: variables.$ob-spacing-default;
 					white-space: nowrap;
-					font-size: variables.$ob-font-size-sm;
+					font-size: variables.$ob-font-size-normal;
 					background-color: transparent;
 
 					&.active {
@@ -96,8 +96,7 @@
 					}
 
 					&:active,
-					&:hover,
-					&:focus {
+					&:hover {
 						background-color: variables.$ob-gray-light;
 					}
 
@@ -138,7 +137,7 @@
 			height: auto;
 			padding: 0;
 			margin: 0;
-			border: none;
+			font-size: variables.$ob-font-size-smaller;
 			overflow-y: auto;
 			overflow-x: hidden;
 			z-index: variables.$ob-z-index-controls;

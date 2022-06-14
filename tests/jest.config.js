@@ -72,8 +72,8 @@ module.exports = {
 			lines: 100
 		},
 		'projects/oblique/src/lib/column-layout/*.ts': {
-			statements: 20,
-			branches: 36,
+			statements: 50,
+			branches: 47,
 			functions: 0,
 			lines: 33
 		},
@@ -103,8 +103,8 @@ module.exports = {
 		},
 		'projects/oblique/src/lib/external-link/*.ts': {
 			statements: 90,
-			branches: 94,
-			functions: 62,
+			branches: 92,
+			functions: 83,
 			lines: 89
 		},
 		'projects/oblique/src/lib/file-upload/*.ts': {
@@ -265,7 +265,7 @@ module.exports = {
 		},
 		'projects/oblique/src/lib/search-box/*.ts': {
 			statements: 91,
-			branches: 94,
+			branches: 85,
 			functions: 66,
 			lines: 89
 		},

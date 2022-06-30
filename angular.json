@@ -115,16 +115,9 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "configPath": "../tests/jest.config.js",
-            "watch": true,
-            "verbose": true
-          },
-          "configurations": {
-            "production": {
-              "configPath": "../tests/jest.config.js",
-              "watch": false,
-              "verbose": false
-            }
+            "configPath": "./src/jest.config.js",
+            "tsConfig": "./src/tsconfig.spec.json",
+            "no-cache": true
           }
         }
       }
@@ -203,15 +196,13 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "configPath": "jest.config.js",
-            "no-cache": true,
-            "watch": true,
-            "verbose": true
+            "configPath": "./jest.config.js",
+            "tsConfig": "./tsconfig.spec.json",
+            "no-cache": true
           },
           "configurations": {
             "production": {
-              "watch": false,
-              "verbose": false
+              "configPath": "./jest.config.prod.js"
             }
           }
         }
